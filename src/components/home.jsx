@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "./carousel";
+import ModalButton from './ModalButton'
 import "./Home.css";
 
 
@@ -16,10 +17,8 @@ const Home = () => {
         <div className="amenities">
           <h3>Availables</h3>
           <div className="available">
-          <div className="amenities">
-            <img className="avaialble-icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjYgNjYiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNjYgNjYiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGc+PHBhdGggZD0ibTYwLjYgMTkuOWMtLjctMS42LTIuNi0yLjQtNC4zLTEuNmwtMjguMSAxMi43LTUuNy05LjljLS42LTEtMS42LTEuNi0yLjgtMS42LS4zIDAtLjUgMC0uNy4xbC0zLjQtNi4xYzItMS42IDIuOC01LjIgMS04LjUtMS45LTMuMi01LjYtNS4xLTguNy0zLjRzLTMuNSA1LjktMS44IDkuMWMxLjMgMi40IDMuNyA0IDYuMSA0IC41IDAgMS4xLS4xIDEuNi0uMmwzLjQgNi4yYy0uOSAxLTEgMi41LS4zIDMuN2w3LjEgMTIuNGMuOCAxLjQgMi42IDIgNC4xIDEuM2w1LjQtMi40IDQgMTEtMi40IDQuOS03LjkgNy4xYy0xLjUgMS40LTEuNiAzLjctLjIgNS4yczMuNyAxLjYgNS4yLjJsOC40LTcuNmMuNC0uMy42LS43LjgtMS4xbDMuMy03IDYuMiAyLjJ2MTAuNWMwIDIgMS42IDMuNyAzLjcgMy43czMuNy0xLjYgMy43LTMuN3YtMTMuMWMwLTEuNS0xLTIuOS0yLjQtMy41bC02LjUtMi4zLTQuMy0xMS44IDEzLjktNi4zYzEuNi0uNyAyLjQtMi42IDEuNi00LjJ6Ii8+PHBhdGggZD0ibTI0LjQgOS45Yy40IDAgLjYtLjEuOS0uMWwtLjgtNS45LS42LjFjLTEuNi4yLTIuNyAxLjgtMi41IDMuNC4zIDEuNCAxLjUgMi41IDMgMi41eiIvPjxwYXRoIGQ9Im0zMS4zIDEwLjRjLjguMSAxLjQtLjYgMS4xLTEuM2wtMS02LjhjLS4xLS43LS44LTEuMS0xLjQtLjdsLTMuNiAxLjguOSA2LjR6Ii8+PHBhdGggZD0ibTI4LjMgMTkuOWMwIDMuMSAyLjYgNS43IDUuNyA1LjdzNS43LTIuNSA1LjctNS43YzAtMy4xLTIuNS01LjctNS43LTUuNy0zLjEgMC01LjcgMi41LTUuNyA1Ljd6Ii8+PC9nPjwvZz48L3N2Zz4=" alt="icon1" />
-            <p className="booknplayside">Book N Play</p>
-          </div>
+         <ModalButton/>
+
           <div className="amenities">
             <img className="avaialble-icon" src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjYgNjYiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNjYgNjYiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGc+PHBhdGggZD0ibTYwLjYgMTkuOWMtLjctMS42LTIuNi0yLjQtNC4zLTEuNmwtMjguMSAxMi43LTUuNy05LjljLS42LTEtMS42LTEuNi0yLjgtMS42LS4zIDAtLjUgMC0uNy4xbC0zLjQtNi4xYzItMS42IDIuOC01LjIgMS04LjUtMS45LTMuMi01LjYtNS4xLTguNy0zLjRzLTMuNSA1LjktMS44IDkuMWMxLjMgMi40IDMuNyA0IDYuMSA0IC41IDAgMS4xLS4xIDEuNi0uMmwzLjQgNi4yYy0uOSAxLTEgMi41LS4zIDMuN2w3LjEgMTIuNGMuOCAxLjQgMi42IDIgNC4xIDEuM2w1LjQtMi40IDQgMTEtMi40IDQuOS03LjkgNy4xYy0xLjUgMS40LTEuNiAzLjctLjIgNS4yczMuNyAxLjYgNS4yLjJsOC40LTcuNmMuNC0uMy42LS43LjgtMS4xbDMuMy03IDYuMiAyLjJ2MTAuNWMwIDIgMS42IDMuNyAzLjcgMy43czMuNy0xLjYgMy43LTMuN3YtMTMuMWMwLTEuNS0xLTIuOS0yLjQtMy41bC02LjUtMi4zLTQuMy0xMS44IDEzLjktNi4zYzEuNi0uNyAyLjQtMi42IDEuNi00LjJ6Ii8+PHBhdGggZD0ibTI0LjQgOS45Yy40IDAgLjYtLjEuOS0uMWwtLjgtNS45LS42LjFjLTEuNi4yLTIuNyAxLjgtMi41IDMuNC4zIDEuNCAxLjUgMi41IDMgMi41eiIvPjxwYXRoIGQ9Im0zMS4zIDEwLjRjLjguMSAxLjQtLjYgMS4xLTEuM2wtMS02LjhjLS4xLS43LS44LTEuMS0xLjQtLjdsLTMuNiAxLjguOSA2LjR6Ii8+PHBhdGggZD0ibTI4LjMgMTkuOWMwIDMuMSAyLjYgNS43IDUuNyA1LjdzNS43LTIuNSA1LjctNS43YzAtMy4xLTIuNS01LjctNS43LTUuNy0zLjEgMC01LjcgMi41LTUuNyA1Ljd6Ii8+PC9nPjwvZz48L3N2Zz4=" alt="icon2" />
             <p className="register">Membership</p>
@@ -67,7 +66,10 @@ const Home = () => {
         <div>
           <h3>Location</h3>
           <p>gvsduiusvbnwfsklv</p>
-          <img src="" alt="location" />
+         <div>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.4493871231825!2d81.53132137388535!3d16.553872526284017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37cdedc9ffc779%3A0x43b78b96d005ad75!2sSmash%20Badminton%20Academy!5e0!3m2!1sen!2sin!4v1709792863860!5m2!1sen!2sin" width="600" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+         </div>
         </div>
       </div>
     </div>
