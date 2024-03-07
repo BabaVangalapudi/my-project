@@ -1,10 +1,18 @@
 import Home from './components/home'
-import ModalButton from './components/ModalButton'
+import Landing from './components/landing'
+import { BrowserRouter, Routes,Route} from 'react-router-dom'
 function App() {
 
   return (
     <>
-   <Home/>  
+    <BrowserRouter>
+    <Routes>
+      <Route exact path='/' element={<Landing/>}/>
+      <Route exact path='/home' element={<Home/>}/>
+    </Routes>
+    </BrowserRouter>
+   {/* <Home/>   */}
+   {/* <Landing/> */}
     </>
   )
 }
