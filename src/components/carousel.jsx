@@ -1,60 +1,47 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+// Carousel.js
+
+import React, { useState,useEffect } from 'react';
+import { useSpring, animated } from 'react-spring';
+
+const slides = [
+  { id: 1, url:"",alt:"one" },
+  { id: 2, url:"",alt:"two" },
+  { id: 3, url:"",alt:"three"},
+  // Add more slides as needed
+];
+
 const Carousel = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay:true,
-    autoplaySpeed:4000,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
+  const [index, setIndex] = useState(0);
+
+  const nextSlide = () => setIndex((prev) => (prev + 1) % slides.length);
+  const prevSlide = () => setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 3000); 
+
+    return () => clearInterval(intervalId); 
+  }, [index]);
+
+
+  const props = useSpring({
+    transform: `translateX(-${index * 100}%)`,
+  });
+
   return (
-    <div style={{width:"270px"}}>
-      <h2>React Slick Carousel</h2>
-      <Slider {...settings} >
-        <div>
-          <h3>Slide 1</h3>
+    <div style={{ overflow: 'hidden', width: '100%', position: 'relative' }}>
+      <animated.div style={{ display: 'flex', width: `${slides.length * 100}%`, ...props }}>
+        {slides.map((slide) => (
+          <div key={slide.id} style={{ flex: '0 0 100%', boxSizing: 'border-box' }}>
+            <img src={slide.url} alt={slide.alt} />
+          </div>
+        ))}
+        <div key={slides.length + 1} style={{ flex: '0 0 100%', boxSizing: 'border-box' }}>
+          <img src={slides[0].url} alt={slides[0].alt} />
         </div>
-        <div>
-          <h3>Slide 2</h3>
-        </div>
-        <div>
-          <h3>Slide 3</h3>
-        </div>
-        {/* Add more slides as needed */}
-      </Slider>
+      </animated.div>
     </div>
   );
 };
+
 export default Carousel;
-
-
-
-
-
-
-
-
-

@@ -82,6 +82,7 @@ a{
         justify-content: center;
         padding:3% 8%;
         gap:3rem;
+        background-image: url('');
     }
     .section1{
         width: 65%;
@@ -99,6 +100,9 @@ a{
     .map{
         height: 400px;
     }
+    .button-container2{
+        display: none;
+    }
 }
 @media only screen and (max-width: 768px){
     .container{
@@ -107,6 +111,7 @@ a{
         align-items: center;
         padding: 1rem;
         gap: 20px;
+        background-image: url('');
     }
     .section1,.section2{
         width: 100%;
@@ -138,5 +143,13 @@ a{
         gap: 3rem;
         flex-direction: column;
         align-items: center;
+    }
+    .button-container{
+       display: none;
+    }
+    .button-container2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
     }
 }
