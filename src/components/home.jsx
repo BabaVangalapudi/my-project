@@ -79,7 +79,7 @@ const Home = () => {
       </div>
       <div className="section2">
         <div className="button-container">
-          <button><a href="https://wa.me/qr/GWLH476WFJTME1">Book Now</a></button>
+          <a href="https://wa.me/message/63CIAW324QBMK1"><button>Book Now</button></a>
           <button>Share</button>
         </div>
         <div>
