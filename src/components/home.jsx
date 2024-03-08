@@ -70,7 +70,7 @@ const Home = () => {
         </div>
         <div className="amenities">
           <h3>About Venue</h3>
-          <ul>
+          <ul className="about-list">
             <li>Maximum of 6 people can be allowed to play on one court</li>
             <li>Non marking shoes are mandatory</li>
             <li>Racquets, nylon shuttle & non marking shoes can be rented</li>
