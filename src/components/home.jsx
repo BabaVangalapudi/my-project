@@ -85,8 +85,8 @@ const Home = () => {
         <div>
           <h3>Location</h3>
           <p> Bhupathiraju Ramurthy Raju Nagar, Mentay Vari Thota, Bhimavaram, Kumudavalli, Andhra Pradesh 534201</p>
-          <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.4493871231825!2d81.53132137388535!3d16.553872526284017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37cdedc9ffc779%3A0x43b78b96d005ad75!2sSmash%20Badminton%20Academy!5e0!3m2!1sen!2sin!4v1709792863860!5m2!1sen!2sin" width="600" height="450" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div className="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.4493871231825!2d81.53132137388535!3d16.553872526284017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37cdedc9ffc779%3A0x43b78b96d005ad75!2sSmash%20Badminton%20Academy!5e0!3m2!1sen!2sin!4v1709792863860!5m2!1sen!2sin" width="100%" height="100%" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>

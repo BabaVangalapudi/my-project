@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 const Carousel = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -31,9 +31,9 @@ const Carousel = () => {
     ]
   };
   return (
-    <div>
+    <div style={{width:"270px"}}>
       <h2>React Slick Carousel</h2>
-      <Slider {...settings}>
+      <Slider {...settings} >
         <div>
           <h3>Slide 1</h3>
         </div>
