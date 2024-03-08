@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.contain{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
 
 .hero span{
   margin-left: 8px;
@@ -19,6 +25,11 @@
   }
 .explore-btn{
   width: 150px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  color: black;
+  font-family: "Poppins";
+  border: 1px solid;
 }
 @media only screen and (max-width:538px){
 .hero span{
@@ -30,7 +41,7 @@
   width: 100px;
 }
 .landing-screen{
-  background-image: url('https://i.ibb.co/FDDMqC7/download.jpg');
+  background-image: url("https://i.ibb.co/VJZGVP1/Minimalistic-Badminton-Sport-Fitness-Poster-Psd-Layered-Background-Wallpaper-Image-For-Free-Download.jpg");
   background-size: cover;
 }
 
