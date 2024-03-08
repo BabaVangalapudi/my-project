@@ -6,10 +6,10 @@ body{
     border: 1px solid #dfdfdf;
     border-radius: 1rem;
     padding: 1rem;
-    width: 700px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
 }
 .amenities-list{
     display: flex;
@@ -22,6 +22,9 @@ body{
     gap: 8px;
     align-items: center;
     font-size: 13px;
+}
+.about-list{
+    padding-left: 20px;
 }
 h3{
     margin-top: 0;
@@ -59,12 +62,14 @@ button{
 .available-modal{
     border: 1px solid #dfdfdf;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100px;
     align-items: center;
+    white-space: nowrap;
+    font-size: 13px;
 }
 a{
     color: white;
@@ -75,18 +80,17 @@ a{
         display: flex;
         width: 100vw;
         justify-content: center;
-        padding: 3rem;
-        height: 100vh;
-        gap: 20px;
+        padding:3% 8%;
+        gap:3rem;
     }
     .section1{
-        width: 50%;
+        width: 65%;
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
     .section2{
-        width: 40%;
+        width: 35%;
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
@@ -115,7 +119,7 @@ a{
         height: 350px;
     }
     .available-modal{
-        width: 80px;
+        width: 100px;
     }
     .avaialble-icon{
         height: 30px;
@@ -123,6 +127,16 @@ a{
         align-self: center;
     }
     .amenities{
-        width: 270px;
+        align-self: center;
+    }
+    .amenities-list{
+        display: flex;
+       flex-direction: column;
+    }
+    .available{
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        align-items: center;
     }
 }
