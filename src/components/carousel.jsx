@@ -33,7 +33,7 @@ const Carousel = () => {
       <animated.div style={{ display: 'flex', width: `${slides.length * 100}%`, ...props }}>
         {slides.map((slide) => (
           <div key={slide.id} style={{ flex: '0 0 100%', boxSizing: 'border-box' }}>
-            <img src={slide.url} alt={slide.alt} />
+            <img className='carousel-image' src={slide.url} alt={slide.alt} height="100%" width="100%"/>
           </div>
         ))}
         <div key={slides.length + 1} style={{ flex: '0 0 100%', boxSizing: 'border-box' }}>

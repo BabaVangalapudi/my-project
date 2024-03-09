@@ -1,7 +1,9 @@
 body{
     font-family: 'Poppins';
 }
-
+p,li{
+    font-size: 13px;
+}
 .amenities{
     border: 1px solid #dfdfdf;
     border-radius: 1rem;
@@ -25,6 +27,9 @@ body{
 }
 .about-list{
     padding-left: 20px;
+}
+.carousel-image{
+    object-fit: cover;
 }
 h3{
     margin-top: 0;

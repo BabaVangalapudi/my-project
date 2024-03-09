@@ -6,11 +6,14 @@ import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
 
 const style = {
+  display: "flex",
+  flexDirection: "column",
   position: "absolute",
   top: "50%",
+  gap: "10px",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "220px",
+  width: "250px",
   bgcolor: "background.paper",
   border: "1px solid none",
   boxShadow: 24,
@@ -25,7 +28,7 @@ const modalData = [
   {
     id: 2,
     head: "Membership",
-    description: "INR 3000.00/Month Per single person",
+    description: "INR 1000.00/Month Per single person",
   },
   {
     id: 3,
@@ -79,6 +82,7 @@ export default function TransitionsModal(props) {
               <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                 {selectedData.description}
               </Typography>
+              <button><a href="https://wa.me/message/63CIAW324QBMK1" style={{ padding: "10px" }}>Book Now</a></button>
             </Box>
           )}
         </Fade>

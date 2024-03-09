@@ -11,15 +11,26 @@ const Home = () => {
     <div className="container">
       <div className="section1">
         <div>
-          <h1 className="herohead">Smash Badminton Academy</h1>
+          <h1 style={{fontSize:"25px"}}>Smash Badminton Academy</h1>
           <div>
-            <span className="loaction">Bhimavaram</span>
+            <span style={{fontSize:"13px"}}>Bhimavaram</span>
           </div>
         </div>
         <Carousel />
         <div className="button-container2">
           <button><a href="https://wa.me/message/63CIAW324QBMK1">Book Now</a></button>
           <button>Share</button>
+        </div>
+        <div className="amenities">
+        <h3>Timing</h3>
+        <div style={{display:"flex",justifyContent:"space-between"}}>
+          <h5>Morning</h5>
+          <p>5am - 10am</p>
+        </div>
+        <div style={{display:"flex",justifyContent:"space-between"}}>
+          <h5>Evening</h5>
+          <p>4pm - 10pm</p>
+        </div>
         </div>
         <Availables/>
         <Amenities/>
