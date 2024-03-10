@@ -1,47 +1,59 @@
-// Carousel.js
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import React, { useState,useEffect } from 'react';
-import { useSpring, animated } from 'react-spring';
-
-const slides = [
-  { id: 1, url:"",alt:"one" },
-  { id: 2, url:"",alt:"two" },
-  { id: 3, url:"",alt:"three"},
-  // Add more slides as needed
-];
-
-const Carousel = () => {
-  const [index, setIndex] = useState(0);
-
-  const nextSlide = () => setIndex((prev) => (prev + 1) % slides.length);
-  const prevSlide = () => setIndex((prev) => (prev - 1 + slides.length) % slides.length);
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, 3000); 
-
-    return () => clearInterval(intervalId); 
-  }, [index]);
-
-
-  const props = useSpring({
-    transform: `translateX(-${index * 100}%)`,
-  });
-
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
   return (
-    <div style={{ overflow: 'hidden', width: '100%', position: 'relative' }}>
-      <animated.div style={{ display: 'flex', width: `${slides.length * 100}%`, ...props }}>
-        {slides.map((slide) => (
-          <div key={slide.id} style={{ flex: '0 0 100%', boxSizing: 'border-box' }}>
-            <img className='carousel-image' src={slide.url} alt={slide.alt} height="100%" width="100%"/>
-          </div>
-        ))}
-        <div key={slides.length + 1} style={{ flex: '0 0 100%', boxSizing: 'border-box' }}>
-          <img src={slides[0].url} alt={slides[0].alt} />
+    <div
+      className={className}
+      style={{ ...style, display: "none"}}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "none"}}
+      onClick={onClick}
+    />
+  );
+}
+
+function LazyLoad() {
+  const settings = {
+    dots: false,
+    lazyLoad: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 2,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+  };
+  return (
+    <div className="carousel-width">
+      <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+          <img className="carousel-image" src="https://i.ibb.co/28k0MDY/Screenshot-20240309-153838-Instagram.jpg" alt="1" />
         </div>
-      </animated.div>
+        <div>
+          <img className="carousel-image" src="https://i.ibb.co/xgVPgyW/Screenshot-20240309-153817-Instagram.jpg" alt="2" />
+        </div>
+        <div>
+          <img className="carousel-image" src="https://i.ibb.co/kJHVgJf/Screenshot-20240309-153807-Instagram.jpg" alt="3" />
+        </div>
+      </Slider>
+    </div>
     </div>
   );
-};
+}
 
-export default Carousel;
+export default LazyLoad;
