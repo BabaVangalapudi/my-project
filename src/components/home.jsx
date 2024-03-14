@@ -19,7 +19,7 @@ const Home = () => {
         <Carousel />
         <div className="button-container2">
           <button><a href="https://wa.me/message/63CIAW324QBMK1">Book Now</a></button>
-          <button><a href="tel:+919492668472">Make a Call</a></button>
+          <button><a href="tel:+917569767096">Make a Call</a></button>
         </div>
         <div className="amenities">
         <h3>Timing</h3>
