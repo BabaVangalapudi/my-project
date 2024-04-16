@@ -1,0 +1,30 @@
+{
+    "name": "Smash Badminton Academy",
+    "short_name": "SBA",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "theme_color": "#2196f3",
+    "icons":[
+        {
+            "src":"/SBA.png",
+            "type":"image/png",
+            "sizes":"3276x3276"
+        }
+    ],
+    "screenshots": [
+        {
+          "src": "/desktop.png",
+          "sizes": "1318x747",
+          "type": "image/png"
+        },
+        {
+          "src": "/mobile.png",
+          "sizes": "430x758",
+          "type": "image/png"
+        }
+      ]
+      
+  }
