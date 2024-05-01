@@ -4,8 +4,17 @@ import Availables from "../Availables";
 import "./Home.css";
 import Amenities from "../Amenities";
 import About from "../About";
+import Advertise from "../Advertise";
+import { useState, useEffect } from "react";
 
 const Home = () => {
+
+  const [popupShown, setPopupShown] = useState(false);
+
+  const handlePopupDismiss = () => {
+    setPopupShown(true);
+  };
+
   return (
     <div className="container">
       <div className="section1">
@@ -66,6 +75,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {!popupShown && <Advertise />}
+  
     </div>
   );
 };
