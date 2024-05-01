@@ -34,7 +34,11 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
+.close-icon{
+  height: 25px;
+  width: 25px;
+  align-self: flex-end;
+}
 .popup button:hover {
   background-color:rgb(92, 247, 92);
   color: #000;
