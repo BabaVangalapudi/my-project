@@ -5,18 +5,14 @@ import "./Home.css";
 import Amenities from "../Amenities";
 import About from "../About";
 import Advertise from "../Advertise";
+import ScrollingText from "../ScrollingText";
 import { useState, useEffect } from "react";
 
 const Home = () => {
-
-  const [popupShown, setPopupShown] = useState(false);
-
-  const handlePopupDismiss = () => {
-    setPopupShown(true);
-  };
-
   return (
     <div className="container">
+      <ScrollingText/>
+      <div className="container-2">
       <div className="section1">
         <div>
           <h1 style={{ fontSize: "25px" }}>Smash Badminton Academy</h1>
@@ -75,8 +71,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {!popupShown && <Advertise />}
-  
+      </div>
+     
+      <Advertise />
     </div>
   );
 };

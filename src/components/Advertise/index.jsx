@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import "./index.css";
 
 const Popup = () => {
-  const popupDismissed = localStorage.getItem("popupDismissed");
+  // const popupDismissed = localStorage.getItem("popupDismissed");
 
-  const [showPopup, setShowPopup] = useState(!popupDismissed);
+  const [showPopup, setShowPopup] = useState(true);
 
   const handleClosePopup = () => {
     setShowPopup(false);
-    localStorage.setItem("popupDismissed", "true");
+    // localStorage.setItem("popupDismissed", "true");
   };
-
 
   if (!showPopup) {
     return null;
