@@ -2,7 +2,6 @@ import "./landing.css";
 import { Link } from "react-router-dom";
 
 function Landing() {
-  const [loading, setLoading] = useState(false);
   return (
     <div className="landing-screen">
       <div className="contain">
