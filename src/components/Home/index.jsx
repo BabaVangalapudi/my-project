@@ -49,7 +49,9 @@ const Home = () => {
           <button>
             <a href="https://wa.me/message/63CIAW324QBMK1">Book Now</a>
           </button>
-          <button>Share</button>
+          <button>
+            <a href="tel:+917569767096">Make a Call</a>
+          </button>
         </div>
         <div>
           <h3>Location</h3>

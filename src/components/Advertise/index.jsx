@@ -24,9 +24,11 @@ const Popup = () => {
           alt=""
           onClick={handleClosePopup}
         />
-        <h2>Tournament is happening</h2>
-        <p>Click on explore for full details</p>
-        <button>Explore</button>
+        <h2>Summer Camp Started</h2>
+        <p>Make a call and Book your slot</p>
+        <button>
+            <a href="tel:+917569767096">Make a Call</a>
+          </button>
       </div>
     </div>
   );
