@@ -4,7 +4,7 @@ const ScrollingText = () => {
     return (
       <div className="scrolling-text-container">
         <marquee behavior="scroll" direction="left">
-          Tournament is happening, slots are limited
+          Summer camp is started, Book your slots Now!!!!
         </marquee>
       </div>
     );
