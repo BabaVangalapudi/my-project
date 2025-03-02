@@ -1,4 +1,4 @@
-import Home from './components/Home'
+import Home from './components/Home/Home'
 import Landing from './components/Landing'
 import { BrowserRouter, Routes,Route} from 'react-router-dom'
 function App() {
