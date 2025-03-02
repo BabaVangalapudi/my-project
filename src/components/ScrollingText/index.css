@@ -1,0 +1,12 @@
+.scrolling-text-container {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .scrolling-text-container marquee {
+    font-size: 1.2rem;
+    color:#fff;
+    padding: 10px 20px;
+    background-color: rgb(172, 172, 247);
+  }
+  

@@ -1,5 +1,5 @@
-import Home from './components/home'
-import Landing from './components/landing'
+import Home from './components/Home'
+import Landing from './components/Landing'
 import { BrowserRouter, Routes,Route} from 'react-router-dom'
 function App() {
 
